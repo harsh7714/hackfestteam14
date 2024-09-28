@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Greetings in Russian</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:rgb(186, 186, 226);
+            text-align: center;
+            padding: 50px;
+        }
+        .greeting {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color:rgb(235, 231, 240);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .greeting:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Indian Greetings in Russian</h1>
+<div class="greeting" onclick="playSound('namaste.mp3')">नमस्ते (Здравствуйте)</div>
+<div class="greeting" onclick="playSound('shukriya.mp3')">धन्यवाद (Спасибо)</div>
+<div class="greeting" onclick="playSound('shalom.mp3')">शांति (Мир)</div>
+<div class="greeting" onclick="playSound('sukh.mp3')">सुख (Счастье)</div>
+
+<audio id="greetingSound" src=""></audio>
+
+<script>
+    function playSound(soundFile) {
+        const audio = document.getElementById('greetingSound');
+        audio.src = soundFile;
+        audio.play();
+    }
+</script>
+
+</body>
+</html>

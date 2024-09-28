@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Language Input</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url("https://img.freepik.com/free-vector/flat-design-travel-background_23-2149193475.jpg?semt=ais_hybrid");
+            background-repeat: no-repeat;
+            background-size:cover;
+            height: 100%;
+            background-position: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-image: url("halloween-line-cobweb-effect-vector-horror-frame_107791-21050.jpg");
+        }
+        h1 {
+            text-align: center;
+            color: #ccc;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #0e0d0d;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1beb4b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover{
+           
+        background-color:#1aa43a
+        }
+        
+        
+        label{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Select Your Preferences</h1>
+    <label for="language">Select Language:</label>
+    <select id="language">
+        <option value="russian">Russian</option>
+        <option value="spanish">Spanish</option>
+        <option value="english">English</option>
+        <option value="french">French</option>
+        <option value="german">German</option>
+        <option value="chinese">Chinese</option>
+        <!-- Add more languages as needed -->
+    </select>
+    <label for="Country">Select Country you are going:</label>
+    <select id="Country">
+        <option value="India">India</option>
+        <option value="Japan">Japan</option>
+        <option value="USA">USA</option>
+        <option value="Russia">Russia</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Europe">Europe</option>
+    </select>
+           <div onclick="location.href='main.html'">
+            <button onclick="submit">Submit</button>
+           </div>
+
+    <div id="output" style="margin-top: 20px;"></div>
+</div>
+</body>
+</html>
