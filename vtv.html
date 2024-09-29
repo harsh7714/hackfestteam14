@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice to Text & Translation</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
+
+    <div style="max-width: 600px; margin: 0 auto;">
+        <h1 style="text-align: center; color: #333;">Voice to Text & Translation Tool</h1>
+
+        <div style="background: linear-gradient(135deg, #ff6f61, #de4265); border-radius: 10px; padding: 20px; margin: 20px 0; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);">
+            <h2 style="color: white;">🎤 Voice Input</h2>
+            <button id="start-record-btn" style="background-color: #ffffff; color: #ff6f61; border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s;">Start Recording</button>
+            <textarea id="text-output" rows="5" placeholder="Your text will appear here..." style="width: 100%; margin-top: 10px; border-radius: 5px; border: none; padding: 10px;"></textarea>
+        </div>
+
+        <div style="background: linear-gradient(135deg, #ff6f61, #de4265); border-radius: 10px; padding: 20px; margin: 20px 0; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);">
+            <h2 style="color: white;">🌍 Translate Text</h2>
+            <select id="language-select" style="padding: 10px; border-radius: 5px; margin-right: 10px;">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <!-- Add more languages as needed -->
+            </select>
+            <button id="translate-btn" style="background-color: #ffffff; color: #ff6f61; border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s;">Translate</button>
+            <div id="translated-output" style="margin-top: 10px; font-weight: bold; color: #fff;"></div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, #ff6f61, #de4265); border-radius: 10px; padding: 20px; margin: 20px 0; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);">
+            <h2 style="color: white;">🔊 Text to Speech</h2>
+            <button id="speak-btn" style="background-color: #ffffff; color: #ff6f61; border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s;">Read Aloud</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
